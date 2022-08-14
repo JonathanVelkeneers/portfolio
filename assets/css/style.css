@@ -30,7 +30,7 @@ nav {
 nav ul li {
     display: inline-block;
     font-size: 1.5rem;
-    padding: 3% 2%;
+    padding: 15px 10px;
 }
 
 main {
@@ -77,7 +77,7 @@ a.icon {
 
 article {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 5vh;
 }
@@ -88,10 +88,15 @@ article:nth-child(even) {
 
 article img {
     width: 20%;
+    height: auto;
+    min-width: 160px;
+    min-height: 160px;
+    margin: 0 2vw 1vh 0;
 }
 
+
 article .article-content {
-    width: 75%;
+    width: 70%;
 }
 
 article h1 {
@@ -101,7 +106,7 @@ article h1 {
 
 article h2 {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2%;
 }
 
@@ -110,4 +115,18 @@ article h2 {
     main {
         width: 95%;
     }
+
+    article img {
+        margin-right: 0;
+        max-width: 100%;
+        max-height: 27vh;
+        width: auto;
+        min-width: unset;
+        min-height: unset;
+    }
+
+    article .article-content {
+        width: 100%;
+    }
+
 }
