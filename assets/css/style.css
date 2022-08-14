@@ -1,9 +1,11 @@
-body {
+html, body {
     background: black;
     color: mintcream;
 
     /* 100 + 400 + 700 */
     font-family: 'Lato', sans-serif;
+
+    font-size: calc(15px + 0.3906vw);
 }
 
 a {
@@ -32,19 +34,19 @@ nav ul li {
 }
 
 main {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.8rem;
     margin-bottom: 1vh;
 }
 
 h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 100;
     margin-bottom: 10vh;
 }
@@ -68,11 +70,44 @@ a.icon {
 
 .icon:hover {
     fill: darkgray;
-    transform: scaleX(1.1)  scaleY(1.1);
+    transform: scaleX(1.1) scaleY(1.1);
     transition: ease 0.4s;
 }
 
 
-article{
+article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
 
+article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+article img {
+    width: 20%;
+}
+
+article .article-content {
+    width: 75%;
+}
+
+article h1 {
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+article h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 750px ) {
+
+    main {
+        width: 95%;
+    }
 }
