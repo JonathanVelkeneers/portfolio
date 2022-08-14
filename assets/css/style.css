@@ -55,7 +55,7 @@ h2 {
     justify-content: center;
 }
 
-a.icon{
+a.icon {
     margin: 2%;
 }
 
@@ -64,4 +64,15 @@ a.icon{
     height: 70px;
     display: inline-block;
     fill: white;
+}
+
+.icon:hover {
+    fill: darkgray;
+    transform: scaleX(1.1)  scaleY(1.1);
+    transition: ease 0.4s;
+}
+
+
+article{
+
 }
