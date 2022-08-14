@@ -86,12 +86,17 @@ article:nth-child(even) {
     flex-direction: row-reverse;
 }
 
+
 article img {
     width: 20%;
     height: auto;
     min-width: 160px;
     min-height: 160px;
     margin: 0 2vw 1vh 0;
+}
+
+article:nth-child(even) img {
+    margin: 0 0 1vh 2vw;
 }
 
 
